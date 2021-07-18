@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Emprole</title>
+</head>
+<body>
+<center>
+  <div>
+    <table>
+      <tr>
+        <th>Employee id</th>
+        <th>Role id</th>
+        <th>Job location</th>
+        <th>Start date</th>
+        <th>End date</th>
+        <th>Update</th>
+      </tr>
+      {% for i in emprole %}
+      <tr>
+        <td>{{i.empid_id}}</td>
+        <td>{{i.rid_id}}</td>
+        <td>{{i.joblocation}}</td>
+        <td>{{i.start_date}}</td>
+        <td>{{i.end_date}}</td>
+        <td><a href="eemprole/{{i.empid_id}}/{{i.rid_id}}">Update</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </div>
+  <a href="{% url 'admin home' %}">Goto Admin page</a>
+</center>
+</body>
+</html>

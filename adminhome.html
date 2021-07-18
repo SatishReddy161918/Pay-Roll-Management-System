@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+</head>
+<body>
+<center>
+    <div>
+    <h1>Welcome Admin</h1>
+    <h3>please select the operation to do</h3>
+        <table>
+    <tr>
+        <td>
+            Employee
+        </td>
+        <td>
+            <a href="{% url 'uemployee' %}">update employee details</a>
+        </td>
+        <td>
+            <a href="{% url 'iemployee' %}">insert employee </a>
+        </td>
+        <td>
+            <a href="{% url 'vemployee' %}">view employees </a>
+        </td>
+    </tr>
+    <tr>
+
+        <td>
+            Role
+        </td>
+        <td>
+            <a href="{% url 'urole' %}">update role</a>
+        </td>
+        <td>
+            <a href="{% url 'irole' %}">insert role</a>
+        </td>
+        <td>
+            <a href="{% url 'vrole' %}">View roles</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        Employee Role
+        </td>
+        <td>
+            <a href="{% url 'emprole' %}">update employee role</a>
+        </td>
+        <td>
+            <a href="{% url 'iemprole' %}">insert employee role</a>
+        </td>
+        <td>
+            <a href="{% url 'vemprole' %}">View employee role</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Account Details
+        </td>
+        <td>
+            <a href="{% url 'uaccount' %}">update AccountDetails</a>
+        </td>
+        <td>
+            <a href="{% url 'iaccount' %}">insert AccountDetails</a>
+        </td>
+        <td>
+            <a href="{% url 'vaccount' %}">View AccountDetails</a>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="{% url 'password' %}">update password</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><a href="{% url 'vqueries' %}">view queries</a></td>
+        <td></td>
+    </tr>
+
+        </table>
+    </div>
+</center>
+</body>
+</html>
